@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+:root{
+    /*theme colors*/
+  --text-blue: #25274D;
+  --text-gray: #F4F4F6;
+  /*font-family*/
+  --font-family: 'Fira Sans', sans-serif;
+
+}
+
+body{
+   margin: 0%;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+header{
+    position: absolute;
+    top:0; 
+    left:0;
+    width:100%;
+    background: var(--text-blue);
+    padding: 2rem 9%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+header .logo{
+    font-size: 2rem;
+    color: #F4F4F6;
+
+}
+header .logo span{
+    color:#F4F4F6;
+
+}
+header .navbar a{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: #F4F4F6;
+
+}
+header .navbar a:hover{
+    color: lightblue;
+
+}
+header input{
+    display: none;
+}
+header label{
+    font-size: 3rem;
+    color: #f4f4f6;
+    cursor: pointer;
+    visibility: hidden;
+}
+@media (max-width:768px){
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        background: var(--text-blue);
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0,0,0,.2) ;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    header .navbar a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+    header input:checked ~ .navbar{
+            transform: scaleY(1);
+            opacity: 1;
+
+        }
+    header input:checked ~ label::before{
+            content: '\f00d';
+
+        }
+    
+    }
+}
+
+
+
+.h1{
+position: absolute;
+font-family:Fira Sans ;
+font-style: normal;
+font-weight: 600;
+text-align: center;
+color: #25274D;
+}
+h1{
+  
+
+position: absolute;
+width: 610px;
+height: 63px;
+left: 450px;
+top: 140px;
+
+font-family: Fira Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 42px;
+line-height: 63px;
+/* identical to box height, or 150% */
+text-align: center;
+
+color: #25274D;
+
+
+    
+}
+p{
+    position: absolute;
+    width: 1170px;
+    height: 120px;
+    left: 150px;
+    top: 235px;
+    font-family: 'Fira Sans', sans-serif;
+    font-style:normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #545454;
+}
+.features-img{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    left: 200px;
+    top: 390px;
+    
+}
+.feature-text{
+    position: absolute;
+    width: 1170px;
+    height: 120px;
+    left: 50px;
+    top:  850px;
+    
+}
+
+section#containerf{
+    position: absolute;
+    width: 1200px;
+    height: 600px;
+    left: 100px;
+    top: 1366px;
+    background-color: var(--text-gray); 
+ }
+ .container{
+     /* stand-full-size-transparent 1 */
+ background-color: lightgrey;
+ position: absolute;
+ width: 295px;
+ height: 640px;
+ 
+ position: absolute;
+ width: 500px;
+ height: 300px;
+ left: 100px;
+ background-color: var(--text-gray);
+ }
+ div#first h2{
+ position: absolute;
+ width: 162px;
+ height: 36px;
+ left: 500px;
+ top: 20px;
+ font-family: Fira Sans;
+ font-style: normal;
+ font-weight: 600;
+ font-size: 24px;
+ line-height: 36px;
+ color: #25274D;
+ }
+ div#first ul{
+    position: absolute;
+    width: 434px;
+    height: 60px;
+    left: 500px;
+    top: 55px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #545454;
+    }
+div#second h3{
+        /* Optional */
+    
+    position: absolute;
+    width: 95px;
+    height: 36px;
+    left: 500px;
+    top: 350px;
+    /* H3 */
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+    
+    color: #25274D;
+    
+    
+    }
+div#second ul{
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    left: 500px;
+    top: 385px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #545454;
+    }
+section#box1{
+        position: absolute;
+        top: 2000px;
+        position: absolute;
+        width: 200px;
+        height: 370px;
+        left: 100px;
+        background-color: var(--text-gray);
+    }
+section#box1-img{
+        position: absolute;
+        width: 560px;
+        height: 400px;
+        mix-blend-mode: multiply;
+        background: transparent;
+        background-color: var(--text-gray);
+        }
+
+section#boxx{
+            position:absolute;
+            width: 550px;
+            height: 400px;
+            top: 2000px;
+            left: 725px;
+            background: var(--text-gray);
+            }
+            
+section#costs{
+            /* base */
+            
+            position: absolute;
+            width: 1200px;
+            height: 380px;
+            left: 100px;
+            top: 2404px;
+            top: 2404px;
+            
+            background: #F4F4F6;
+            
+            
+            }
+#costs h1{
+      position: absolute;
+      top: 50px;
+      left: 300px;;
+}
+#costs p{
+    position: absolute;
+width: 770px;
+height: 30px;
+left: 200px;
+top: 150px;
+
+font-family: Fira Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height, or 150% */
+text-align: center;
+
+color: #25274D;
+}
+#data h3{
+    /* How we handle your data */
+
+position: absolute;
+width: 277px;
+height: 36px;
+left: 600px;
+top: 2900px;
+
+/* H3 */
+font-family: var(--font-family);
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height, or 150% */
+text-align: center;
+color: #25274D;
+}
+ 
+div#logo img{
+    position: absolute;
+    top: 3000px;
+    left: 300px;
+
+}
+div#location img{
+    position: absolute;
+    top: 3000px;
+    left: 800px;
+}
+form{
+    position: absolute;
+    top:3350px;
+    left: 650px;
+    font-family: Fira Sans;
+    text-decoration-color: #25274D;
+}
+
+#header h4{
+
+position: absolute;
+top: 3200px;
+width: 370px;
+height: 63px;
+left: 550px;
+font-family: Fira Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 42px;
+line-height: 63px;
+text-align: center;
+color: #25274D;
+
+}
+form.mb-3{
+position: absolute;
+
+font-family: Fira Sans;
+
+color: #25274D;
+
+
+}
+.mb-3 input{
+    width: 100%;
+    height: 100%;
+}
+button{
+position: absolute;
+top: 3700px;
+left: 650px;
+padding: 12px 24px;
+background: #25274D;
+width: 206px;
+height: 54px;
+color: #F4F4F6;
+border-radius: 50px;
+font-family: var(--font-family);
+font-size: 20px;
+}
+#p{
+    top: 3720px;
+    position: absolute;
+    left: 60px;
+    width: 570px;
+    height: 42px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 21px;
+    color:#545454;
+}
+section#call h4{
+    position: absolute;
+    font-size:24px;
+    left: 600px;
+    top: 4100px;
+    font-family: var(--font-family);
+    color:#25274D;
+
+
+}
+section#call img{
+    position: absolute;
+    top: 4200px;
+    left: 450px;
+}
+.number p{
+    position: absolute;
+    top: 4200px;
+    left: 550px;
+    font-family: var(--font-family);
+    font-size: 42px;
+    line-height: 64px;
+    color: #2D9CCA;
+}
+#or .text{
+    position: absolute;
+    top:4300px;
+    left: 350px;
+}
+#or p{
+    position: absolute;
+    top: 4400px;
+    left: 200px;
+}
+#diz{
+position: absolute;
+width: 81.73px;
+height: 36px;
+left: 20px;
+top: 300px;
+}
+#ffwd{
+    position: absolute;
+    top: 300px;
+    left: 200px;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: #25274D;
+    background-size: cover;
+    background-position: center;
+    top: 4600px;
+}
+footer .box-container{
+    display: flex;
+  
+}
+footer .box-container .box{
+    position: absolute;
+    flex: 1 1 25rem;
+    margin: 1rem;
+    left: 1000px;
+}
+footer .box-container .box h4{
+    
+    top: 10px;
+    left: 200px;
+    padding: 1rem 0;
+    color: #FFF;
+}
+footer .box-container .box a{
+    display: block;
+    font-size: 1rem;
+    padding: .5rem 0;
+    color: #FFF;
+}
+footer .box-container .box a:hover{
+    color: lightblue;
+}
+
+footer .box-container .box1{
+    position: absolute;
+    flex: 1 1 25rem;
+    margin: 1rem;
+    left: 1200px;
+}
+footer .box-container .box1 h4{
+    
+    top: 10px;
+    left: 200px;
+    padding: 1rem 0;
+    color: #FFF;
+}
+footer .box-container .box1 a{
+    
+    display: block;
+    font-size: 1rem;
+    padding: .5rem 0;
+    color: #FFF;
+}
+footer .box-container .box1 a:hover{
+    color: lightblue;
+}
+footer .box-container .row-f{
+    position: absolute;
+    flex: 1 1 25rem;
+    margin: 1rem;
+    left: 300px;
+}
+footer .box-container .row-f h4{
+    left: 100px;
+    padding: 1rem 0;
+    color: #FFF;
+    font-style: var(--font-family);
+    font-size: 32px;
+    
+}
+footer .box-container .row-f p{
+    left: 2px;
+    top: 80px;
+    width: 470px;
+    height: 48px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-style: normal;
+    color: #fff;
+}
+.row-f form{
+    top: 150px;
+   position: absolute;
+    left: 10px;
+   width: 320px;
+height: 48px;
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 50px;
+}
+.row-f form input[type="email"]{
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    background: none;
+    width: 100%;
+    color: #Fff;
+    text-transform: none;
+    
+}
+.row-f form input[type="email"]::placeholder{
+    color: #fff;
+    transform: capitalize;
+    font-family: var(--font-family);
+}
+
+.row-f button{
+    top: 150px;
+    position: absolute;
+    left: 350px;
+    background: #D5580B;
+    width: 130px;
+    border-radius: 5rem;
+    cursor: pointer;
+    height: 48px;
+    
+}
+.row-f button a{
+    color: #fff;
+    background: #D5580B;
+    font-size: 20px;
+    font-weight: 400;
+}
+.social a{
+    
+    height: 40px;
+    width: 40px;
+    background-color: var(--text-gray);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    left: 900px;
+    top: 300px;
+    position: absolute;
+}
+
+footer .par-f .content{
+    position: absolute;
+    top: 250px;
+    width: 167px;
+    height: 21px;
+    left: 300px;
+    color: #fff;
+    font-size: 14px;
+    font-family: var(--font-family);
+}
+footer .par-f .f-p{
+    position: absolute;
+    top: 250px;
+    width: 167px;
+    height: 21px;
+    left: 800px;
+    color: #fff;
+    font-size: 14px;
+    font-family: var(--font-family);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
